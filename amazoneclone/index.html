@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>amazonia.in</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <div class="nav-logo">
+      <span class="logo">amazonia</span>
+      <span class="logo-sub">.in</span>
+    </div>
+
+    <div class="nav-deliver">
+      <span>📍 Deliver to</span>
+      <strong>Ghaziabad 201001</strong>
+    </div>
+
+    <div class="search-bar">
+      <select class="search-category">
+        <option>All</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+        <option>Home</option>
+      </select>
+      <input type="text" placeholder="Search amazonia.in">
+      <button>🔍</button>
+    </div>
+
+    <div class="nav-account">
+      <span>Hello, sign in</span>
+      <strong>Account &amp; Lists ▾</strong>
+    </div>
+
+    <div class="nav-orders">
+      <span>Returns</span>
+      <strong>&amp; Orders</strong>
+    </div>
+
+    <div class="cart-icon" onclick="toggleCart()">
+      🛒 <span class="cart-text">Cart (<span id="cart-count">0</span>)</span>
+    </div>
+  </header>
+
+  <!-- Secondary Navbar -->
+  <nav class="subnav">
+    <span>☰ All</span>
+    <span>Today's Deals</span>
+    <span>Electronics</span>
+    <span>Fashion</span>
+    <span>Home &amp; Kitchen</span>
+    <span>Mobiles</span>
+    <span>Books</span>
+    <span>Customer Service</span>
+  </nav>
+
+  <!-- Hero Banner -->
+  <div class="hero">
+    <img src="banner.png" alt="banner">
+  </div>
+
+  <!-- Products -->
+  <main class="products" id="products"></main>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cart-sidebar">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <h3>Total: ₹<span id="cart-total">0</span></h3>
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    <button class="close-btn" onclick="toggleCart()">Close</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 amazonia.in — A simple clone project for learning purposes.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
